@@ -1,0 +1,19 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "This is for a class assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MurtadhaM/ITIS6177-Week-01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MurtadhaM/ITIS6177-Week-01/issues"
+  },
+  "homepage": "https://github.com/MurtadhaM/ITIS6177-Week-01#readme"
+}
