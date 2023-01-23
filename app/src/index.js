@@ -1,15 +1,24 @@
-const functions = require('@google-cloud/functions-framework');
-const escapeHtml = require('escape-html');
 
-/**
- * Responds to an HTTP request using data from the request body parsed according
- * to the "content-type" header.
- *
- * @param {Object} req Cloud Function request context.
- * @param {Object} res Cloud Function response context.
- */
-functions.http('helloHttp', (req, res) => {
-  res.send(`Hello ${escapeHtml(req.query.name || req.body.name || 'World')}!`);
-});
+/*
+Author: Murtadha Marzouq
+Assignment: Express Web Server
+*/
 
- 
+const express = require('express');
+
+const app = express();
+
+
+// Start the server
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+    console.log(`Server listening on port http://localhost:${port}`);
+    }
+);
+
+// Default route
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+}
+);
+
